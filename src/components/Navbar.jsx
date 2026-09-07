@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import  { navLinks } from "../data/data";
 //import { a } from 'motion/react-client';
 import { MenuIcon, X, XIcon } from 'lucide-react';
@@ -7,9 +7,17 @@ import { useState } from 'react';
 const Navbar = () => {
 
   const [mobileOpen,setMobileOpen] = useState(false);
+  const[scrolled,setScrolled] = useState(false); 
+  useEffect(()=>{
+    const handScroll = ()=>{
+      setScrolled(window.scrollY > 10)
+    };
+    window.addEventListener("scroll",handScroll);
+    return ()=>window.removeEventListener("scroll",handScroll)
+  },[])
   return (
     <>
-    <nav className="fixed top-0 z-20 px-auto w-full transitions-all durations-300 bg-transparent">
+    <nav className={`fixed top-0 z-20 px-auto w-full transitions-all durations-300 ${scrolled ? "bg-white/70 backdrop-blur-medium":'bg-transparent'}`}>
       <div className="flex items-center justify-between font-medium py-4 mx-auto max-w-7xl">
         <a href="/">
         <img src="/assets/logo.svg" alt="logo" className="" /></a>
