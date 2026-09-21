@@ -29,7 +29,7 @@ const Dishes = () => {
             onMouseEnter={() => {
               setRotate((prev) => ({
                 ...prev,
-                [index]: prev[index] || 0 + 180,
+                [index]: (prev[index] || 0) + 180,
               }));
             }}
             className="flex flex-col items-center text-center shrink-0 cursor-pointer"

@@ -6,6 +6,11 @@ import Stats from "./section/Stats";
 import Dishes from "./section/Dishes";
 import Features from "./section/Features";
 import BookingProcess from "./section/BookingProcess";
+import Timing from "./section/Timing";
+import TestimonialSection from "./section/TestimonialSection";
+import Faq from "./section/Faq";
+import Cta from "./section/Cta";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -17,6 +22,11 @@ const App = () => {
       <Dishes />
       <Features />
       <BookingProcess />
+      <Timing />
+      <TestimonialSection />
+      <Faq />
+      <Cta />
+      <Footer />
     </>
   );
 };
