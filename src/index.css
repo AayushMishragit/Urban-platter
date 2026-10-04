@@ -2,17 +2,16 @@
 @import "tailwindcss";
 
 @theme {
-    --font-sans: "Geist", sans-serif;
-    --font-urbanist: "Urbanist", sans-serif;
+  --font-sans: "DM Serif Display", sans-serif;
+  --font-urbanist: "Urbanist", sans-serif;
 }
 
 @layer base {
-    body {
-        @apply bg-white text-black text-sm;
-    }
+  body {
+    @apply bg-white text-black text-sm;
+  }
 }
 
 @utility px-auto {
-    @apply px-6 md:px-12 lg:px-24 xl:px-40;
+  @apply px-6 md:px-12 lg:px-24 xl:px-40;
 }
-

@@ -1,4 +1,3 @@
-
 import React from "react";
 import Animated from "../components/Animated";
 import { Star } from "lucide-react";
@@ -13,11 +12,8 @@ const avatars = [
 const Herosection = () => {
   return (
     <section className="flex flex-col items-center justify-center min-h-screen bg-[url('/assets/heroBanner.png')] bg-cover bg-no-repeat pt-20">
-
       <Animated y={-20} delay={0.2}>
-        <p className="text-orange-600">
-          WHERE FLAVOR MEETS ELEGANCE
-        </p>
+        <p className="text-orange-600">Meets culinary excellence</p>
       </Animated>
 
       <Animated>
@@ -66,15 +62,11 @@ const Herosection = () => {
             ))}
           </div>
 
-          <p className="text-zinc-800">
-            4.8/5 Rating - 10,000 reviews
-          </p>
+          <p className="text-zinc-800">4.8/5 Rating - 10,000 reviews</p>
         </div>
       </Animated>
-
     </section>
   );
 };
 
 export default Herosection;
-

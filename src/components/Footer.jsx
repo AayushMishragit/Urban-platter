@@ -102,7 +102,7 @@ const Footer = () => {
       </div>
       {/* watermark-logo-backdrop */}
       <div className="absolute inset-0 text-center select-none -z-1 pointer-events-none">
-        <span className="text-[230px] tracking-wide font-urbanist font-semibold text-zinc-100/70">
+        <span className="text-[190px] tracking-wide font-urbanist font-semibold text-zinc-100/70">
           Urban Platter
         </span>
       </div>
